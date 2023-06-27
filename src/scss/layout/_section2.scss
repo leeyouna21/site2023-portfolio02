@@ -1,0 +1,66 @@
+#section2 {
+  width: 100%;
+  height: 500vh;
+  background-color: #ead0bc79;
+
+  .title {
+    font-size: 18vw;
+    font-weight: 100;
+    margin-left: 13vw;
+    padding-top: 10vw;
+    color: #4b3d30;
+  }
+  .subTitle {
+    font-size: 4vw;
+    text-align: right;
+    margin-right: 10vw;
+    color: #4b3d30;
+    padding-top: 5vw;
+  }
+  .aboutBox1 {
+    .imgWrap {
+      width: 30vw;
+      height: 40vw;
+      background-color: #fff;
+      margin-left: 10vw;
+      margin-top: 2vw;
+      background-image: url(../../images/main1__me02.jpg);
+      background-size: cover;
+    }
+    .text {
+      font-size: 1.2vw;
+      margin-left: 20vw;
+      margin-top: 2vw;
+      font-family: NexonLv1GothicLow;
+      color: #4b3d30;
+    }
+  }
+
+  .aboutBox2 {
+    .imgWrap2 {
+      width: 25vw;
+      height: 30vw;
+      background-color: #fff;
+      margin-left: 65vw;
+      margin-top: 2vw;
+      background-image: url(../../images/main1__right.png);
+      background-size: cover;
+    }
+    .img__text {
+      font-size: 11vw;
+      font-weight: 300;
+      z-index: 1000;
+      margin-top: -10vw;
+      margin-left: 7vw;
+      color: #be968b;
+    }
+    .text {
+      font-size: 1vw;
+      margin-left: 60vw;
+      margin-top: -2vw;
+      font-family: NexonLv1GothicLow;
+      color: #4b3d30;
+      text-align: left;
+    }
+  }
+}

@@ -1,0 +1,14 @@
+/* UL, LI 초기화 */
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* A 링크 초기화 */
+
+a {
+  text-decoration: none;
+}

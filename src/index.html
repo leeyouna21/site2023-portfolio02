@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>포트폴리오 두번째</title>
+
+    <link rel="stylesheet" href="./scss/style.scss" />
+    <link rel="stylesheet" href="./scss/reset.scss" />
+  </head>
+  <body>
+    <header id="header">
+      <h1 class="header__name"><a href="#">YOUNA</a></h1>
+      <nav class="nav"></nav>
+      <a href="#" class="contact">contact</a>
+    </header>
+
+    <main id="main">
+      <section id="section1">
+        <h2 class="split">YOUNA</h2>
+        <p class="desc1">
+          ADD ELEGANCE AND CHARM TO YOUR <br />
+          SPACE WITH FURNITURE THAT <br />
+          EXPRESSES YOUR INDIVIDUALITY
+        </p>
+        <p class="desc2">
+          WHERE STYLE<br />
+          ENDURES: TIMELESS<br />
+          FURNITURE FOR<br />
+          YOUR STORY
+        </p>
+        <div class="desc3">
+          <div class="section1__img">
+            <img src="./images/header__me.png" alt="" />
+          </div>
+          <div class="name">HELLO EVERYONE !</div>
+        </div>
+        <!-- <div class="desc4">
+          <div class="desc4__title">CODING OF THE DAY</div>
+        </div> -->
+      </section>
+
+      <section id="section2">
+        <h2 class="title">ABOUT ME</h2>
+        <div class="subTitle">
+          <div>WHERE STYLEENDURES:</div>
+          <div>TIMELESS FURNITURE</div>
+          <div>FOR YOUR STORY</div>
+        </div>
+        <div class="aboutBox1">
+          <div class="imgWrap">
+            <div class="img"></div>
+          </div>
+          <div class="text">
+            저는 평소 사람들과 어울려 어떤 일을 해내는 것을 좋아합니다. <br />
+            그 속에서 얻어지는 긍정적인 시너지와 밝은 에너지를 통해 원동력을
+            얻기<br />
+            때문입니다. 그렇기 때문에 새롭고 도전적인 것에 흥미를 느끼고<br />
+            진취적이고 개방적인 사고방식을 가지고 있습니다. 팀을 꾸려 타인을<br />
+            이끌고 팀워크와 소통으로 팀의 성과를 이루는 과정에서 타인의
+            성장을<br />
+            도모하여 협동심이 뛰어납니다.
+          </div>
+        </div>
+        <div class="aboutBox2">
+          <div class="imgWrap2">
+            <div class="img"></div>
+          </div>
+          <div class="img__text">LEADERSHIP</div>
+          <div class="text">
+            저는 평소 사람들과 어울려 어떤 일을 해내는 것을 좋아합니다. <br />
+            그 속에서 얻어지는 긍정적인 시너지와 밝은 에너지를 통해 원동력을
+            얻기<br />
+            때문입니다. 그렇기 때문에 새롭고 도전적인 것에 흥미를 느끼고<br />
+            진취적이고 개방적인 사고방식을 가지고 있습니다. 팀을 꾸려 타인을<br />
+            이끌고 팀워크와 소통으로 팀의 성과를 이루는 과정에서 타인의
+            성장을<br />
+            도모하여 협동심이 뛰어납니다.
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/ScrollToPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1/bundled/lenis.min.js"></script>
+
+    <script>
+      // JavaScript 코드
+      window.addEventListener("scroll", function () {
+        var header = document.getElementById("header");
+
+        if (window.pageYOffset > 0) {
+          header.style.display = "block";
+        } else {
+          header.style.display = "none";
+        }
+      });
+    </script>
+
+    <script>
+      const lenis = new Lenis();
+
+      lenis.on("scroll", (e) => {
+        console.log(e);
+      });
+      function raf(time) {
+        lenis.raf(time);
+        requestAnimationFrame(raf);
+      }
+      requestAnimationFrame(raf);
+
+      //section1 YOUNA글씨 쪼개기
+      document.querySelectorAll(".split").forEach((text) => {
+        let splitWrap = text.innerText
+          .split("")
+          .join("</span><span aira-hidden='true'>");
+        text.innerHTML = "<span aria-hidden='true'>" + splitWrap + "</span>";
+        text.setAttribute("aria-label", text.innerText);
+      });
+
+      setTimeout(() => {
+        gsap.to("#section1 .split span", {
+          autoAlpha: 1,
+          y: 0,
+          stagger: 0.1,
+        });
+      }, 1500);
+
+      //section1 desc2
+      gsap.to("#section1 .desc2", {
+        yPercent: 300,
+        ease: "none",
+        duration: 1,
+        scrollTrigger: {
+          trigger: "#section",
+          start: "top bottom",
+          end: "bottom top",
+          markers: true,
+          scrub: true,
+        },
+      });
+      gsap.to("#section1 .desc3", {
+        yPercent: 300,
+        ease: "none",
+        duration: 1,
+        scrollTrigger: {
+          trigger: "#section",
+          start: "top bottom",
+          end: "bottom top",
+          markers: true,
+          scrub: true,
+        },
+      });
+
+      gsap.to("#section1 .desc4__title", {
+        yPercent: -300,
+        ease: "none",
+        duration: 1,
+        scrollTrigger: {
+          trigger: "#section",
+          start: "top 20%",
+          end: "bottom top",
+          markers: true,
+          scrub: true,
+        },
+      });
+    </script>
+
+    <script type="module" src="main.js"></script>
+  </body>
+</html>

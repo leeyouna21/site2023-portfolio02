@@ -1,0 +1,49 @@
+#main > section {
+  width: 100%;
+}
+
+#header {
+  position: fixed;
+  width: 100%;
+  height: 70px;
+  background-color: #ffffff80;
+  backdrop-filter: blur(5px);
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+  text-transform: uppercase;
+  padding: 10px 15px;
+  z-index: 1000;
+  transition: top 0.3s ease-in-out;
+  .visible {
+    display: flex;
+    top: 0;
+  }
+  .header__name {
+    font-size: 2vw;
+    position: absolute;
+    left: 2vw;
+    color: #fff;
+  }
+  .contact {
+    font-size: 2vw;
+    position: absolute;
+    right: 2vw;
+    color: #fff;
+  }
+}
+//   .header__name {
+//     font-size: 3vw;
+//     margin: 0;
+//     // padding-left: 30vw;
+
+//     .contact {
+//       padding: 10px;
+//       font-size: 10vw;
+//       text-decoration: none;
+//       color: black;
+//       background-color: #ce7373;
+//       padding-left: 30vw;
+//     }
+//   }
+// }
