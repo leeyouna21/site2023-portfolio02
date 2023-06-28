@@ -1,187 +1,324 @@
-main {
-  width: 100%;
-  height: 1000vh;
-}
+// main {
+//   width: 100%;
+//   height: 2000vh;
+//   background-color: #fff;
+// }
+
+// #section1 {
+//   width: 100%;
+//   height: 240vh;
+//   background-image: url(../../images/headerbg.png);
+//   background-size: cover;
+//   background-repeat: no-repeat;
+//   filter: brightness(0.9);
+
+//   .split {
+//     // position: absolute;
+//     // left: 2vw;
+//     // top: -3vw;
+//     // font-size: 29vw;
+//     color: #fff;
+//     font-size: 29vw;
+//     padding-left: 2vw;
+//     // background-color: #fff;
+
+//     span {
+//       display: inline-block;
+//       opacity: 0;
+//       transform: translateY(200px);
+//     }
+//   }
+//   .desc1 {
+//     font-size: 1vw;
+//     color: #fff;
+//     position: absolute;
+//     top: 38vw;
+//     left: 10vw;
+//   }
+//   .desc2 {
+//     font-size: 4vw;
+//     position: absolute;
+//     top: 48vw;
+//     left: 25vw;
+//     text-align: right;
+//     color: #fff;
+//   }
+//   .desc3 {
+//     .section1__img {
+//       width: 30vw;
+//       height: 60vh;
+//       img {
+//         width: 25vw;
+//         position: absolute;
+//         left: 38vw;
+//         top: 35vw;
+//       }
+//     }
+//     .name {
+//       font-size: 2vw;
+//       position: absolute;
+//       left: 60vw;
+//       top: 55vw;
+//       color: #fff;
+//     }
+//   }
+//   .desc4 {
+//     .desc4__title {
+//       font-size: 7vw;
+//       position: absolute;
+//       left: 20vw;
+//       top: 110vw;
+//       color: #fff;
+//     }
+//   }
+// }
+
+// // @media (max-width: 1300px) {
+// //   #section1 {
+// //     height: 170vh;
+// //     .desc1 {
+// //       margin-top: -3vw;
+// //     }
+// //     .desc2 {
+// //       margin-top: -7vw;
+// //       font-size: 3.5vw;
+// //     }
+// //     .desc3 {
+// //       .section1__img {
+// //         width: 10vw;
+// //         height: 10vw;
+// //         padding-top: 2vw;
+// //         margin-top: -2vw;
+// //       }
+// //     }
+// //   }
+// // }
+
+// // @media (max-width: 1200px) {
+// //   #section1 {
+// //     height: 150vh;
+// //   }
+// // }
+
+// // @media (max-width: 800px) {
+// //   #header {
+// //     height: 50px;
+// //     h1 {
+// //       a {
+// //         padding: 3px;
+// //         font-size: 16px;
+// //       }
+// //     }
+// //   }
+// //   #section1 {
+// //     height: 100vh;
+// //     h2 {
+// //       font-size: 2vw;
+// //       padding-top: 20px;
+// //     }
+// //     .desc1 {
+// //       font-size: 2vw;
+// //       padding: 5% 10%;
+// //       width: 100%;
+// //     }
+// //     .desc2 {
+// //       font-size: 5vw;
+// //       padding-top: 7vw;
+// //     }
+// //     .desc3 {
+// //       .section1__img {
+// //         margin-top: 10vw;
+// //       }
+// //     }
+// //     // .desc4 {
+// //     //   .desc4__title {
+// //     //     padding-top: 15vw;
+// //     //   }
+// //     // }
+// //   }
+// // }
+
+// // @media (max-width: 1194px) {
+// //   #section1 {
+// //     height: 200vh;
+// //   }
+// // }
+
+// // @media (max-width: 700px) {
+// //   #section1 {
+// //     height: 100vh;
+// //     .desc3 {
+// //       .section1__img {
+// //         margin-top: 20vw;
+// //       }
+// //     }
+// //   }
+// // }
+
+// // @media (max-width: 864px) {
+// //   #section1 {
+// //     height: 100vh;
+// //   }
+// // }
+
+// // @media (max-width: 856px) {
+// //   #section1 {
+// //     height: 130vh;
+// //     .desc2 {
+// //       font-size: 4vw;
+// //     }
+// //     .desc3 {
+// //       width: 30vw;
+// //       height: 30vh;
+// //       padding-top: 4vw;
+// //       .name {
+// //         font-size: 2vw;
+// //       }
+// //     }
+// //   }
+// // }
+
+// // @media (max-width: 576px) {
+// //   #section1 {
+// //     height: 100vh;
+// //   }
+// // }
+
+// /* 화면 너비 : 0부터 1280까지 데스크탑 */
+// @media (max-width: 1280px) {
+//   #section1 {
+//     height: 170vh;
+//     .split {
+//       font-size: 25vw;
+//     }
+//   }
+// }
+
+// /* 화면 너비 : 0부터 1024까지  데스크탑*/
+// @media (max-width: 1280px) {
+//   #section1 {
+//     height: 150vh;
+//     .split {
+//       font-size: 29vw;
+//     }
+//   }
+// }
+
+// /* 화면 너비 : 0부터 960 노트북 */
+// @media (max-width: 1280px) {
+//   #section1 {
+//     height: 150vh;
+//     .split {
+//       font-size: 29vw;
+//     }
+//   }
+// }
+
+// /* 화면 너비 : 0부터 768 테블릿 */
+
+// /* 화면 너비 : 0부터 576 모바일 */
+// @media (max-width: 1280px) {
+//   #section1 {
+//     height: 120vh;
+//     .desc3 {
+//       .section1__img {
+//         margin-top: -10vw;
+//       }
+//     }
+//   }
+// }
+
+// @media (max-width: 300px) {
+//   #section1 {
+//     height: 60vh;
+//     .desc2 {
+//       margin-top: 30vw;
+//     }
+//     .desc3 {
+//       .section1__img {
+//         margin-top: -90vw;
+//       }
+//     }
+//   }
+// }
 
 #section1 {
   width: 100%;
-  height: 250vh;
+  height: 220vh;
   background-image: url(../../images/headerbg.png);
   background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
-  filter: brightness(0.9);
-
-  .split {
-    // position: absolute;
-    // left: 2vw;
-    // top: -3vw;
-    // font-size: 29vw;
-    color: #fff;
-    font-size: 29vw;
-    padding-left: 2vw;
-    // background-color: #fff;
-
-    span {
-      display: inline-block;
-      opacity: 0;
-      transform: translateY(200px);
-    }
-  }
-  .desc1 {
-    font-size: 1vw;
-    color: #fff;
-    position: absolute;
-    top: 38vw;
-    left: 10vw;
-  }
-  .desc2 {
-    font-size: 4vw;
-    position: absolute;
-    top: 42vw;
-    left: 25vw;
-    text-align: right;
-    color: #fff;
-  }
-  .desc3 {
-    .section1__img {
-      width: 30vw;
-      height: 60vh;
-      img {
-        width: 25vw;
-        position: absolute;
-        left: 38vw;
-        top: 25vw;
-      }
-    }
-    .name {
-      font-size: 2vw;
-      position: absolute;
-      left: 60vw;
-      top: 49vw;
-      color: #fff;
-    }
-  }
-  .desc4 {
-    .desc4__title {
-      font-size: 7vw;
-      position: absolute;
-      left: 20vw;
-      top: 110vw;
-      color: #fff;
-    }
-  }
+  padding-bottom: 30vh;
+}
+#section1 h2 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 30vw;
+  line-height: 1;
+  color: #fff;
+  font-weight: 300;
+  padding-top: 4vw;
+}
+#section1 .desc1 {
+  font-size: 30;
+  width: 500px;
+  padding-left: 10vw;
+  color: #fff;
+  padding-top: 5vw;
+}
+#section1 .desc2 {
+  font-size: 5vw;
+  color: #fff;
+  line-height: 1;
+  width: 70%;
+  margin: 30% auto;
+  font-weight: 300;
+}
+#section1 .desc3 {
+  width: 30vw;
+  height: 30vw;
+  margin: 20vw auto 10vw auto;
+  box-shadow: 7px 7px 0 0px rgba(0, 0, 0, 0.3);
+}
+#section1 .desc3 .name {
+  color: #fff;
+  font-size: 3vw;
+  text-align: right;
+  margin-top: -2vw;
+  margin-right: -10vw;
+  font-weight: 300;
 }
 
-@media (max-width: 1300px) {
-  #section1 {
-    height: 170vh;
-    .desc1 {
-      margin-top: -3vw;
-    }
-    .desc2 {
-      margin-top: -7vw;
-      font-size: 3.5vw;
-    }
-    .desc3 {
-      .section1__img {
-        width: 10vw;
-        height: 10vw;
-        padding-top: 2vw;
-        margin-top: -2vw;
-      }
-    }
-  }
-}
-
-@media (max-width: 1200px) {
-  #section1 {
-    height: 150vh;
-  }
-}
-
+/* media */
 @media (max-width: 800px) {
   #header {
     height: 50px;
-    h1 {
-      a {
-        padding: 3px;
-        font-size: 16px;
-      }
-    }
   }
-  #section1 {
-    height: 100vh;
-    h2 {
-      font-size: 2vw;
-      padding-top: 20px;
-    }
-    .desc1 {
-      font-size: 2vw;
-      padding: 5% 10%;
-      width: 100%;
-    }
-    .desc2 {
-      font-size: 5vw;
-      padding-top: 7vw;
-    }
-    .desc3 {
-      .section1__img {
-        margin-top: 10vw;
-      }
-    }
-    // .desc4 {
-    //   .desc4__title {
-    //     padding-top: 15vw;
-    //   }
-    // }
+  #header h1 a {
+    padding: 3px;
+    font-size: 16px;
+  }
+  #header .contact a {
+    padding: 3px;
+    font-size: 16px;
+  }
+  #section1 h2 {
+    padding-top: 90px;
+  }
+  #section1 .desc1 {
+    font-size: 20px;
+    padding: 0 10%;
+    text-align: center;
+    width: 100%;
+  }
+  #section1 .desc2 {
+    font-size: 24px;
+    text-align: center;
+    margin-top: 20%;
+  }
+  #section1 .desc3 {
+    width: 80vw;
+    box-shadow: none;
   }
 }
-@media (max-width: 868px) {
-  #section1 {
-    height: 150vh;
-    .desc3 {
-      .section1__img {
-        margin-top: 20vw;
-      }
-    }
-  }
-}
-
-@media (max-width: 864px) {
-  #section1 {
-    height: 100vh;
-  }
-}
-
-@media (max-width: 856px) {
-  #section1 {
-    height: 130vh;
-    .desc2 {
-      font-size: 4vw;
-    }
-    .desc3 {
-      width: 30vw;
-      height: 30vh;
-      padding-top: 4vw;
-      .name {
-        font-size: 2vw;
-      }
-    }
-  }
-}
-
-@media (max-width: 576px) {
-  #section1 {
-    height: 100vh;
-  }
-}
-
-/* 화면 너비 : 0부터 1280까지 데스크탑 */
-
-/* 화면 너비 : 0부터 1024까지  데스크탑*/
-
-/* 화면 너비 : 0부터 960 노트북 */
-
-/* 화면 너비 : 0부터 768 테블릿 */
-
-/* 화면 너비 : 0부터 576 모바일 */

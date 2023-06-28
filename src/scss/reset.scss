@@ -1,5 +1,9 @@
 /* border-box 초기화 */
-
+body {
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.5s, color 0.5s;
+}
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
