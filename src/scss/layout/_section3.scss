@@ -1,11 +1,13 @@
 #section3 {
   height: 100vh;
+  width: 100%;
   // background-color: #4d3d30;
   color: #fff;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 2; /* Add this line */
 }
 
 #section3 .box {
@@ -20,6 +22,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   display: none;
+  z-index: 1; /* Add this line */
 }
 #section3 .text {
   font-size: 8vw;

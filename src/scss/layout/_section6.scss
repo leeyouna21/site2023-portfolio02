@@ -1,5 +1,38 @@
 #section6 {
   width: 100%;
   height: 100vh;
-  //   background-color: #c0621a;
+  // background-color: #c0621a;
+  h3 {
+    background-color: #fff;
+  }
+  .box {
+    .box__imgwrap {
+      display: flex;
+      .box__img__inner1 {
+        background-image: url(../../images/scroll01.png);
+        width: 50%;
+        height: 100vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+      .box__text__inner1 {
+        width: 50%;
+        height: 100vh;
+        .box__text__inner1__title1 {
+          font-size: 8.5vw;
+          margin-top: 10vw;
+          margin-left: 1vw;
+          color: #4b3d30;
+          font-weight: 300;
+        }
+        .box__text__inner1__desc1 {
+          font-size: 1vw;
+          margin-top: 3vw;
+          margin-left: 2vw;
+          font-family: NexonLv1GothicLow;
+          color: #4b3d30;
+        }
+      }
+    }
+  }
 }

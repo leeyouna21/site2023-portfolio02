@@ -4,6 +4,9 @@ body {
   padding: 0;
   transition: background-color 0.5s, color 0.5s;
 }
+#ddd {
+  height: 1450vh;
+}
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -89,18 +92,18 @@ a {
 
 /* 버튼 초기화 */
 
-// button,
-// html input[type="button"] {
-//   -webkit-appearance: button;
-// }
+button,
+html input[type="button"] {
+  -webkit-appearance: button;
+}
 
-// input {
-//   &[type="reset"],
-//   &[type="submit"] {
-//     -webkit-appearance: button;
-//     cursor: pointer;
-//   }
-// }
+input {
+  &[type="reset"],
+  &[type="submit"] {
+    -webkit-appearance: button;
+    cursor: pointer;
+  }
+}
 /* 스타일 초기화 */
 
 h1,
