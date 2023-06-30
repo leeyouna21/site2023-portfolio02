@@ -1,5 +1,17 @@
 /* UL, LI 초기화 */
-
+// html
+html {
+  overflow-x: hidden;
+}
+// horizontal
+#horizontal {
+  display: flex;
+  flex-wrap: wrap;
+  width: 700vw;
+}
+#horizontal > section {
+  width: 100vw;
+}
 ul,
 li {
   margin: 0;

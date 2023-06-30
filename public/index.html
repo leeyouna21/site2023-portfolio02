@@ -200,26 +200,11 @@
       </section>
 
       <section id="section6" data-bgcolor="#F4F0EA">
-        <h3>이유나</h3>
-        <div class="box">
-          <div class="box__imgwrap">
-            <div class="box__img__inner1"></div>
-            <div class="box__text__inner1">
-              <div class="box__text__inner1__title1">JAVASCRIPT</div>
-              <div class="box__text__inner1__desc1">
-                항공기계설계를 전공으로 공부하였고, 다양한 분야의 업무를 하며
-                <br />
-                나의 적성에 맞는 일을 찾고자 노력을 했습니다. 다니던 대학원을<br />
-                휴학하고 국비지원학원에서 약 6개월간의 여정을 시작했습니다.<br />
-                아직은 서툴고 부족하다는 점을 알고 있습니다.
-              </div>
-            </div>
-          </div>
-        </div>
+        <div class="sec6-box1">dfdf</div>
+        <div class="sec6-box2">dfdf</div>
+        <div class="sec6-box3">dfdfddf</div>
+        <div class="sec6-box4">dfdfd</div>
       </section>
-
-      <!-- <div id="parallax__cont2" data-bgcolor="#F4F0EA">
-      </div> -->
 
       <section id="section8" data-bgcolor="#F4F0EA">
         <div class="footer__wrap1">
@@ -354,24 +339,6 @@
           end: "+=5000",
         },
       });
-    </script>
-
-    <script>
-      //가로모드
-      // let sections1 = gsap.utils.toArray(".parallax__item2");
-
-      // gsap.to(sections, {
-      //   xPercent: -100 * (sections.length - 1),
-      //   ease: "none",
-      //   scrollTrigger: {
-      //     trigger: "#parallax__cont2",
-      //     pin: true,
-      //     scrub: 1,
-      //     markers: true,
-      //     snap: 1 / (sections.length - 1),
-      //     end: "+=5000",
-      //   },
-      // });
     </script>
 
     <!-- // 배경변환 -->
@@ -604,168 +571,5 @@
         anticipatePin: 1,
       });
     </script>
-
-    <!-- //section1 YOUNA글씨 쪼개기, gsap -->
-    <!-- <script>
-      //section1 YOUNA글씨 쪼개기
-      const lenis = new Lenis();
-
-      lenis.on("scroll", (e) => {
-        console.log(e);
-      });
-      function raf(time) {
-        lenis.raf(time);
-        requestAnimationFrame(raf);
-      }
-      requestAnimationFrame(raf);
-
-      //section1 YOUNA글씨 쪼개기
-      document.querySelectorAll(".split").forEach((text) => {
-        let splitWrap = text.innerText
-          .split("")
-          .join("</span><span aira-hidden='true'>");
-        text.innerHTML = "<span aria-hidden='true'>" + splitWrap + "</span>";
-        text.setAttribute("aria-label", text.innerText);
-      });
-
-      setTimeout(() => {
-        gsap.to("#section1 .split span", {
-          autoAlpha: 1,
-          y: 0,
-          stagger: 0.1,
-        });
-      }, 1500);
-
-      //section1 desc2
-      gsap.to("#section1 .desc2", {
-        yPercent: 300,
-        ease: "none",
-        duration: 1,
-        scrollTrigger: {
-          trigger: "#section",
-          start: "top bottom",
-          end: "bottom top",
-          markers: true,
-          scrub: true,
-        },
-      });
-      gsap.to("#section1 .desc3", {
-        yPercent: 300,
-        ease: "none",
-        duration: 1,
-        scrollTrigger: {
-          trigger: "#section",
-          start: "top bottom",
-          end: "bottom top",
-          markers: true,
-          scrub: true,
-        },
-      });
-
-      gsap.to("#section1 .desc4__title", {
-        yPercent: -300,
-        ease: "none",
-        duration: 1,
-        scrollTrigger: {
-          trigger: "#section",
-          start: "top 20%",
-          end: "bottom top",
-          markers: true,
-          scrub: true,
-        },
-      });
-
-      gsap.to("#section2 h2", {
-        xPercent: -30,
-        ease: "none",
-        duration: 0.5,
-        scrollTrigger: {
-          trigger: "#section2 h2",
-          start: "top bottom",
-          end: "bottom top",
-          markers: true,
-          scrub: true,
-        },
-      });
-
-      gsap.to(".aboutBox1 .imgWrap", {
-        yPercent: 10,
-        ease: "none",
-        duration: 0.5,
-        scrollTrigger: {
-          trigger: ".aboutBox1 .imgWrap",
-          start: "top bottom",
-          end: "bottom top",
-          markers: true,
-          scrub: true,
-        },
-      });
-
-      gsap.to(".aboutBox1 .text", {
-        yPercent: 10,
-        ease: "none",
-        duration: 0.5,
-        scrollTrigger: {
-          trigger: ".aboutBox1 .text",
-          start: "top bottom",
-          end: "bottom top",
-          markers: true,
-          scrub: true,
-        },
-      });
-
-      gsap.to(".aboutBox2 .img__text", {
-        xPercent: 10,
-        ease: "none",
-        duration: 0.5,
-        scrollTrigger: {
-          trigger: ".aboutBox2 .img__text",
-          start: "top bottom",
-          end: "bottom top",
-          markers: true,
-          scrub: true,
-        },
-      });
-
-      gsap.to(".aboutBox3 .img__text", {
-        xPercent: -10,
-
-        ease: "none",
-        duration: 0.5,
-        scrollTrigger: {
-          trigger: ".aboutBox3 .img__text",
-          start: "top bottom",
-          end: "bottom top",
-          markers: true,
-          scrub: true,
-        },
-      });
-
-      gsap.to("#section3 .change__inner", {
-        xPercent: -10,
-        ease: "none",
-        duration: 0.5,
-        scrollTrigger: {
-          trigger: "#section3 .change__inner",
-          start: "top bottom",
-          end: "bottom top",
-          markers: true,
-          scrub: true,
-        },
-      });
-
-      gsap.to("#section3 .change__text2", {
-        xPercent: -10,
-        ease: "none",
-        duration: 0.5,
-        scrollTrigger: {
-          trigger: "#section3 .change__text2",
-          start: "top bottom",
-          end: "bottom top",
-          markers: true,
-          scrub: true,
-        },
-      });
-    </script> -->
   </body>
 </html>
