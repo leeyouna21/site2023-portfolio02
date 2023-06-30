@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>포트폴리오 두번째</title>
 
-    <script type="module" crossorigin src="/assets/index-d585024d.js"></script>
-    <link rel="stylesheet" href="/assets/index-756c7077.css" />
+    
+    
+    <script type="module" crossorigin src="/assets/index-6d320bc9.js"></script>
+    <link rel="stylesheet" href="/assets/index-438a3b75.css">
   </head>
   <body>
     <header id="header">
@@ -199,11 +201,100 @@
         </div>
       </section>
 
-      <section id="section6" data-bgcolor="#F4F0EA">
-        <div class="sec6-box1">dfdf</div>
-        <div class="sec6-box2">dfdf</div>
-        <div class="sec6-box3">dfdfddf</div>
-        <div class="sec6-box4">dfdfd</div>
+      <section id="section6">
+        <div class="sec6-box1">
+          <div class="sec6-box1__wrap">
+            <div class="sec6-box1__inner">
+              <div class="btn1">
+                <button class="gitbtn"><a href="#">GIT</a></button>
+                <button class="sitebtn"><a href="#">SITE</a></button>
+              </div>
+              <div class="sec6-box1__img1"></div>
+              <div class="sec6-box1__text1">
+                JAVASCRIPT
+                <div class="sec6-box1__desc1">
+                  항공기계설계를 전공으로 공부하였고, 다양한 분야의 업무를 하며
+                  나의<br />
+                  적성에 맞는 일을 찾고자 노력을 했습니다. 다니던 대학원을
+                  휴학하고<br />
+                  국비지원학원에서 약 6개월간의 여정을 시작했습니다. 아직은
+                  서툴고<br />
+                  부족하다는 점을 알고 있습니다.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="sec6-box2">
+          <div class="sec6-box1__wrap">
+            <div class="sec6-box1__inner">
+              <div class="btn1">
+                <button class="gitbtn"><a href="#">GIT</a></button>
+                <button class="sitebtn"><a href="#">SITE</a></button>
+              </div>
+              <div class="sec6-box1__text1">
+                REACT
+                <div class="sec6-box1__desc1">
+                  항공기계설계를 전공으로 공부하였고, 다양한 분야의 업무를 하며
+                  나의<br />
+                  적성에 맞는 일을 찾고자 노력을 했습니다. 다니던 대학원을
+                  휴학하고<br />
+                  국비지원학원에서 약 6개월간의 여정을 시작했습니다. 아직은
+                  서툴고<br />
+                  부족하다는 점을 알고 있습니다.
+                </div>
+              </div>
+              <div class="sec6-box1__img1"></div>
+            </div>
+          </div>
+        </div>
+        <div class="sec6-box3">
+          <div class="sec6-box1__wrap">
+            <div class="sec6-box1__inner">
+              <div class="btn1">
+                <button class="gitbtn"><a href="#">GIT</a></button>
+                <button class="sitebtn"><a href="#">SITE</a></button>
+              </div>
+              <div class="sec6-box1__img1"></div>
+              <div class="sec6-box1__text1">
+                VUE
+                <div class="sec6-box1__desc1">
+                  항공기계설계를 전공으로 공부하였고, 다양한 분야의 업무를 하며
+                  나의<br />
+                  적성에 맞는 일을 찾고자 노력을 했습니다. 다니던 대학원을
+                  휴학하고<br />
+                  국비지원학원에서 약 6개월간의 여정을 시작했습니다. 아직은
+                  서툴고<br />
+                  부족하다는 점을 알고 있습니다.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="sec6-box4">
+          <div class="sec6-box1__wrap">
+            <div class="sec6-box1__inner">
+              <div class="btn1">
+                <button class="gitbtn"><a href="#">GIT</a></button>
+                <button class="sitebtn"><a href="#">SITE</a></button>
+              </div>
+
+              <div class="sec6-box1__text1">
+                NODE.JS
+                <div class="sec6-box1__desc1">
+                  항공기계설계를 전공으로 공부하였고, 다양한 분야의 업무를 하며
+                  나의<br />
+                  적성에 맞는 일을 찾고자 노력을 했습니다. 다니던 대학원을
+                  휴학하고<br />
+                  국비지원학원에서 약 6개월간의 여정을 시작했습니다. 아직은
+                  서툴고<br />
+                  부족하다는 점을 알고 있습니다.
+                </div>
+              </div>
+              <div class="sec6-box1__img1"></div>
+            </div>
+          </div>
+        </div>
       </section>
 
       <section id="section8" data-bgcolor="#F4F0EA">
@@ -557,19 +648,226 @@
 
     <!-- 핀효과 -->
     <script>
-      const ani9 = gsap.timeline();
-      ani9.to("#section6 .text", { xPercent: -50 });
+      gsap.registerPlugin(ScrollTrigger);
 
-      ScrollTrigger.create({
-        animation: ani9,
-        trigger: "#section6",
-        start: "top top",
-        end: "+=4000",
-        scrub: true,
-        pin: true,
-        markers: true,
-        anticipatePin: 1,
+      const panel1 = document.querySelector("#section6 .sec6-box1");
+
+      gsap.to(panel1, {
+        scrollTrigger: {
+          trigger: panel1,
+          start: "top top",
+          end: "+=1000",
+          markers: true,
+          pin: true,
+          pinSpacing: false,
+        },
+      });
+
+      const panel2 = document.querySelector("#section6 .sec6-box2");
+
+      gsap.to(panel2, {
+        scrollTrigger: {
+          trigger: panel2,
+          start: "top top",
+          end: "+=1000",
+          markers: true,
+          pin: true,
+          pinSpacing: false,
+        },
+      });
+
+      const panel3 = document.querySelector("#section6 .sec6-box3");
+
+      gsap.to(panel3, {
+        scrollTrigger: {
+          trigger: panel3,
+          start: "top top",
+          end: "+=1000",
+          markers: true,
+          pin: true,
+          pinSpacing: false,
+        },
+      });
+
+      const panel4 = document.querySelector("#section6 .sec6-box4");
+
+      gsap.to(panel4, {
+        scrollTrigger: {
+          trigger: panel4,
+          start: "top top",
+          end: "+=1000",
+          markers: true,
+          pin: true,
+          pinSpacing: false,
+        },
       });
     </script>
+
+    <!-- 핀효과 -->
+
+    <!-- //section1 YOUNA글씨 쪼개기, gsap -->
+    <!-- <script>
+      //section1 YOUNA글씨 쪼개기
+      const lenis = new Lenis();
+
+      lenis.on("scroll", (e) => {
+        console.log(e);
+      });
+      function raf(time) {
+        lenis.raf(time);
+        requestAnimationFrame(raf);
+      }
+      requestAnimationFrame(raf);
+
+      //section1 YOUNA글씨 쪼개기
+      document.querySelectorAll(".split").forEach((text) => {
+        let splitWrap = text.innerText
+          .split("")
+          .join("</span><span aira-hidden='true'>");
+        text.innerHTML = "<span aria-hidden='true'>" + splitWrap + "</span>";
+        text.setAttribute("aria-label", text.innerText);
+      });
+
+      setTimeout(() => {
+        gsap.to("#section1 .split span", {
+          autoAlpha: 1,
+          y: 0,
+          stagger: 0.1,
+        });
+      }, 1500);
+
+      //section1 desc2
+      gsap.to("#section1 .desc2", {
+        yPercent: 300,
+        ease: "none",
+        duration: 1,
+        scrollTrigger: {
+          trigger: "#section",
+          start: "top bottom",
+          end: "bottom top",
+          markers: true,
+          scrub: true,
+        },
+      });
+      gsap.to("#section1 .desc3", {
+        yPercent: 300,
+        ease: "none",
+        duration: 1,
+        scrollTrigger: {
+          trigger: "#section",
+          start: "top bottom",
+          end: "bottom top",
+          markers: true,
+          scrub: true,
+        },
+      });
+
+      gsap.to("#section1 .desc4__title", {
+        yPercent: -300,
+        ease: "none",
+        duration: 1,
+        scrollTrigger: {
+          trigger: "#section",
+          start: "top 20%",
+          end: "bottom top",
+          markers: true,
+          scrub: true,
+        },
+      });
+
+      gsap.to("#section2 h2", {
+        xPercent: -30,
+        ease: "none",
+        duration: 0.5,
+        scrollTrigger: {
+          trigger: "#section2 h2",
+          start: "top bottom",
+          end: "bottom top",
+          markers: true,
+          scrub: true,
+        },
+      });
+
+      gsap.to(".aboutBox1 .imgWrap", {
+        yPercent: 10,
+        ease: "none",
+        duration: 0.5,
+        scrollTrigger: {
+          trigger: ".aboutBox1 .imgWrap",
+          start: "top bottom",
+          end: "bottom top",
+          markers: true,
+          scrub: true,
+        },
+      });
+
+      gsap.to(".aboutBox1 .text", {
+        yPercent: 10,
+        ease: "none",
+        duration: 0.5,
+        scrollTrigger: {
+          trigger: ".aboutBox1 .text",
+          start: "top bottom",
+          end: "bottom top",
+          markers: true,
+          scrub: true,
+        },
+      });
+
+      gsap.to(".aboutBox2 .img__text", {
+        xPercent: 10,
+        ease: "none",
+        duration: 0.5,
+        scrollTrigger: {
+          trigger: ".aboutBox2 .img__text",
+          start: "top bottom",
+          end: "bottom top",
+          markers: true,
+          scrub: true,
+        },
+      });
+
+      gsap.to(".aboutBox3 .img__text", {
+        xPercent: -10,
+
+        ease: "none",
+        duration: 0.5,
+        scrollTrigger: {
+          trigger: ".aboutBox3 .img__text",
+          start: "top bottom",
+          end: "bottom top",
+          markers: true,
+          scrub: true,
+        },
+      });
+
+      gsap.to("#section3 .change__inner", {
+        xPercent: -10,
+        ease: "none",
+        duration: 0.5,
+        scrollTrigger: {
+          trigger: "#section3 .change__inner",
+          start: "top bottom",
+          end: "bottom top",
+          markers: true,
+          scrub: true,
+        },
+      });
+
+      gsap.to("#section3 .change__text2", {
+        xPercent: -10,
+        ease: "none",
+        duration: 0.5,
+        scrollTrigger: {
+          trigger: "#section3 .change__text2",
+          start: "top bottom",
+          end: "bottom top",
+          markers: true,
+          scrub: true,
+        },
+      });
+    </script> -->
+
+    
   </body>
 </html>
