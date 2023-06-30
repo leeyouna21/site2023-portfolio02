@@ -206,7 +206,6 @@
   width: 30vw;
   height: 30vw;
   margin: 20vw auto 10vw auto;
-  box-shadow: 7px 7px 0 0px rgba(0, 0, 0, 0.3);
 }
 #section1 .desc3 .name {
   color: #fff;
@@ -250,35 +249,110 @@
   }
 }
 /* 화면 너비 : 0부터 1280까지 데스크탑 */
+@media (max-width: 1280px) {
+  #section1 {
+    height: 130vw;
+    h2 {
+    }
+    .desc1 {
+    }
+    .desc2 {
+      margin-top: 35vw;
+    }
+    .desc3 {
+      img {
+        margin-top: 15vw;
+      }
+    }
+  }
+}
 
 /* 화면 너비 : 0부터 1024까지  데스크탑*/
+@media (max-width: 1024px) {
+  #section1 {
+    height: 130vw;
+    h2 {
+    }
+    .desc1 {
+    }
+    .desc2 {
+      margin-top: 40vw;
+    }
+    .desc3 {
+      img {
+        margin-top: 15vw;
+      }
+    }
+  }
+}
 /* 화면 너비 : 0부터 960 노트북 */
+@media (max-width: 960px) {
+  #section1 {
+    height: 130vw;
+    h2 {
+    }
+    .desc1 {
+    }
+    .desc2 {
+      margin-top: 40vw;
+    }
+    .desc3 {
+      img {
+        margin-top: 15vw;
+      }
+    }
+  }
+}
 
 /* 화면 너비 : 0부터 768 테블릿 */
+@media (max-width: 768px) {
+  #section1 {
+    height: 100vw;
+    h2 {
+      font-size: 15vw;
+      margin-left: -50vw;
+    }
+    .desc1 {
+      font-size: 2vw;
+      margin-top: 3vw;
+      margin-left: -25vw;
+    }
+    .desc2 {
+      margin-left: -10vw;
+      margin-top: 28vw;
+    }
+    .desc3 {
+      img {
+        margin-top: 28vw;
+        width: 30vw;
+      }
+    }
+  }
+}
 
 /* 화면 너비 : 0부터 576 모바일 */
 @media (max-width: 600px) {
   #section1 {
-    height: 150vw;
+    height: 150vh;
     h2 {
-      font-size: 27vw;
-      // margin-left: 5vw;
+      font-size: 28vw;
+      margin-left: -1vw;
     }
     .desc1 {
       font-size: 2vw;
-      padding-right: 20vw;
+      padding-right: 10vw;
       margin-top: 5vw;
     }
     .desc2 {
-      font-size: 5vw;
-      margin-top: 40vw;
-      padding-right: 10vw;
+      font-size: 4vw;
+      margin-top: 30vw;
+      margin-left: 15vw;
     }
     .desc3 {
       img {
-        width: 50vw;
-        padding-top: 10vw;
-        margin-left: 10vw;
+        width: 30vw;
+        // padding-top: -5vw;
+        margin-left: 25vw;
       }
       .name {
         margin-right: 7vw;
