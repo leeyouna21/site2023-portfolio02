@@ -79,9 +79,12 @@
 }
 
 /* 화면 너비 : 0부터 1024까지  데스크탑*/
-@media (max-width: 1024px) {
-  .change__wrap {
-    .change__inner {
+@media (max-width: 600px) {
+  #section3 {
+    height: 150vh;
+    .box {
+    }
+    .text {
     }
   }
 }

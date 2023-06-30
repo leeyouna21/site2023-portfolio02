@@ -147,3 +147,31 @@
     }
   }
 }
+
+@media (max-width: 600px) {
+  #section9 {
+    height: 100vw;
+    .footer__wrap {
+      .footer__container {
+        .footer__inner1 {
+          ul {
+            li {
+            }
+          }
+        }
+        .footer__inner1__01 {
+          ul {
+            li {
+            }
+          }
+        }
+        .footer__inner1__02 {
+          ul {
+            li {
+            }
+          }
+        }
+      }
+    }
+  }
+}

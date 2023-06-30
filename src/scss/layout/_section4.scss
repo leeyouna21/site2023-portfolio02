@@ -172,3 +172,145 @@
 #horizontal > section {
   width: 100vw;
 }
+
+@media (max-width: 600px) {
+  #parallax__cont {
+    height: 100vw;
+    #section1-1 {
+      position: relative;
+      .parallax__item__num {
+        font-size: 7vw;
+        position: absolute;
+        left: 38vw;
+        top: 15vw;
+      }
+      .parallax__item__text1 {
+        font-size: 10px;
+        text-align: left;
+        position: absolute;
+        left: 44vw;
+        top: 30vw;
+      }
+      .parallax__item__imgWrap {
+        .parallax__item__img {
+          width: 40vw;
+        }
+      }
+      .button1 {
+        position: relative;
+        .git {
+          position: absolute;
+          left: -25vw;
+          top: -35vw;
+        }
+        .site {
+          position: absolute;
+          left: -10vw;
+          top: -35vw;
+        }
+      }
+    }
+    #section1-2 {
+      position: relative;
+      .parallax__item__num2 {
+        font-size: 7vw;
+        position: absolute;
+        left: 39vw;
+        top: 50vw;
+      }
+      .parallax__item__text2 {
+        font-size: 10px;
+        text-align: left;
+        position: absolute;
+        left: 44vw;
+        top: 40vw;
+      }
+      .parallax__item__imgWrap {
+        .parallax__item__img {
+          width: 40vw;
+        }
+      }
+      .button2 {
+        position: relative;
+        .git2 {
+          position: absolute;
+          left: -25vw;
+          top: -70vw;
+        }
+        .site2 {
+          position: absolute;
+          left: -10vw;
+          top: -70vw;
+        }
+      }
+    }
+    #section1-3 {
+      position: relative;
+      .parallax__item__num3 {
+        font-size: 7vw;
+        position: absolute;
+        left: 38vw;
+        top: 15vw;
+      }
+      .parallax__item__text3 {
+        font-size: 10px;
+        text-align: left;
+        position: absolute;
+        left: 44vw;
+        top: 30vw;
+      }
+      .parallax__item__imgWrap {
+        .parallax__item__img {
+          width: 40vw;
+        }
+      }
+      .button1 {
+        position: relative;
+        .git {
+          position: absolute;
+          left: -25vw;
+          top: -35vw;
+        }
+        .site {
+          position: absolute;
+          left: -10vw;
+          top: -35vw;
+        }
+      }
+    }
+    #section1-4 {
+      position: relative;
+      .parallax__item__num2 {
+        font-size: 7vw;
+        position: absolute;
+        left: 39vw;
+        top: 50vw;
+      }
+      .parallax__item__text2 {
+        font-size: 10px;
+        text-align: left;
+        position: absolute;
+        left: 44vw;
+        top: 40vw;
+      }
+      .parallax__item__imgWrap {
+        .parallax__item__img {
+          width: 40vw;
+        }
+      }
+      .button2 {
+        position: relative;
+        .git2 {
+          position: absolute;
+          left: -25vw;
+          top: -70vw;
+        }
+        .site2 {
+          position: absolute;
+          left: -10vw;
+          top: -70vw;
+        }
+      }
+    }
+  }
+}

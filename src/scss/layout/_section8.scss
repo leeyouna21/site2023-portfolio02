@@ -1,6 +1,9 @@
 #section8 {
   width: 100%;
   height: 100vh;
+  display: flex;
+  justify-content: center; /* 수평 가운데 정렬 */
+  align-items: center; /* 수직 가운데 정렬 */
   .footer__wrap1 {
     position: relative;
     .footer__text1 {
@@ -11,11 +14,11 @@
     }
     .footer__container1 {
       width: 40vw;
-      height: 40vh;
+      height: 20vw;
       background-color: #e8e0d4;
-      position: absolute;
-      left: 30vw;
-      top: 25vw;
+      position: relative;
+      left: 25vw;
+      top: -5vw;
     }
 
     .footer__cont__text1 {
@@ -36,6 +39,33 @@
       font-size: 1.5vw;
       padding-left: 2vw;
       color: #4d3d30;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  #section8 {
+    height: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .footer__wrap1 {
+      .footer__text1 {
+        font-size: 7vw;
+        padding-right: 10vw;
+      }
+      .footer__container1 {
+        position: static;
+        margin-top: 10vw;
+        .footer__cont__text1 {
+        }
+        .footer__cont__email {
+          .email {
+          }
+        }
+      }
     }
   }
 }

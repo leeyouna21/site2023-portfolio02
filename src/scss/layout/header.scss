@@ -39,8 +39,17 @@
 //     }
 //   }
 // }
-@media (max-width: 300px) {
+@media (max-width: 600px) {
   #header {
-    height: 3vw;
+    // height: 3vw;
+    h1 {
+      font-size: 3vw;
+    }
+    .contact {
+      font-size: 2.5vw;
+      position: absolute;
+      left: 85vw;
+      top: 2.5vw;
+    }
   }
 }
