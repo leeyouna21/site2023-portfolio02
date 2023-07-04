@@ -125,52 +125,66 @@
     }
   }
 }
-
-@media (max-width: 600px) {
+/* 화면 너비 : 0부터 1280까지 데스크탑 */
+/* 화면 너비 : 0부터 1024까지  데스크탑*/
+@media (max-width: 1024px) {
   #section2 {
-    height: 200vw;
-    .subTitle {
-      font-size: 4.5vw;
-    }
-    .aboutBox1 {
-      .img {
-        margin-top: 7vw;
-      }
-      .text {
-        font-size: 13px;
-        margin-top: 2vw;
-      }
-    }
     .aboutBox2 {
       .title {
-        font-size: 8vw;
-        padding-left: -3vw;
-        // margin-top: -15vw;
-        position: relative;
-        z-index: 1;
-      }
-      .text {
-        .desc {
-          font-size: 1vw;
-        }
-      }
-    }
-    .aboutBox3 {
-      .title {
-        font-size: 11vw;
-      }
-      .text {
-        .img {
-          width: 40vw;
-          height: 30vh;
-          margin-top: 40vw;
-        }
-        .desc {
-          padding-top: 22vw;
-
-          font-size: 8px;
-        }
+        background-color: #fff;
       }
     }
   }
 }
+
+/* 화면 너비 : 0부터 960 노트북 */
+/* 화면 너비 : 0부터 768 테블릿 */
+/* 화면 너비 : 0부터 576 테블릿 */
+// @media (max-width: 600px) {
+//   #section2 {
+//     height: 200vw;
+//     .subTitle {
+//       font-size: 4.5vw;
+//     }
+//     .aboutBox1 {
+//       .img {
+//         margin-top: 7vw;
+//       }
+//       .text {
+//         font-size: 13px;
+//         margin-top: 2vw;
+//       }
+//     }
+//     .aboutBox2 {
+//       .title {
+//         font-size: 8vw;
+//         padding-left: -3vw;
+//         // margin-top: -15vw;
+//         position: relative;
+//         z-index: 1;
+//       }
+//       .text {
+//         .desc {
+//           font-size: 1vw;
+//         }
+//       }
+//     }
+//     .aboutBox3 {
+//       .title {
+//         font-size: 11vw;
+//       }
+//       .text {
+//         .img {
+//           width: 40vw;
+//           height: 30vh;
+//           margin-top: 40vw;
+//         }
+//         .desc {
+//           padding-top: 22vw;
+
+//           font-size: 8px;
+//         }
+//       }
+//     }
+//   }
+// }
